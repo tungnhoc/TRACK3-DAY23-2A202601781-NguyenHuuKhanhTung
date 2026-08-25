@@ -9,8 +9,10 @@ because classify_node and answer_node use real LLM calls.
 
 import importlib.util
 import os
-
 import pytest
+from dotenv import load_dotenv
+
+load_dotenv()
 
 pytestmark = [
     pytest.mark.skipif(
